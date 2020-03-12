@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -96,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view){
         if (view == btnRegister){
             register();
+            Intent intent = new Intent(this,LoginActivity.class);
+            startActivity(intent);
         }
     }
 }
